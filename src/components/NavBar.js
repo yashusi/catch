@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import { useState } from 'react';
 import {Container, Nav, Navbar, NavDropdown, Button, Form} from 'react-bootstrap';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Toys from '../pages/Toys';
-import Donations from '../pages/Donations'
-import News from '../pages/News'
-import Contact from '../pages/Contact'
+import Donations from '../pages/Donations';
+import News from '../pages/News';
+import Contact from '../pages/Contact';
 import Search from './Search';
 
 import './Navbar.css'

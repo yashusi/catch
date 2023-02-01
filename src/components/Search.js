@@ -1,8 +1,7 @@
-import { useState, useEffect, useRef } from 'react'
-import { TbSearch } from 'react-icons/tb'
-import React from 'react'
-import {  } from 'bootstrap';
+import React, { useState, useEffect, useRef } from 'react';
+import { TbSearch } from 'react-icons/tb';
 import SearchBar from './SearchBar';
+
 import './Search.css';
 
 export default function Search() {
