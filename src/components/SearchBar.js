@@ -22,7 +22,7 @@ export default function SearchBar() {
         value={searchTerm}
         onChange={handleChange}
       />
-      <button className="search-submit" type="submit"><FaSearch size={23}/></button>
+      <button className="search-submit" type="submit"><FaSearch size={20}/></button>
     </form>
   );
 }

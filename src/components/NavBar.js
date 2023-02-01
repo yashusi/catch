@@ -20,10 +20,12 @@ export default class NavBar extends Component {
       <Router>
         <Navbar className="header"  expand="lg">
             <Container>
-            <Navbar.Brand as={Link} to={"/"}><img className="nav-logo" src={require('../images/logo.png')} alt="" /></Navbar.Brand>
+            <Navbar.Brand className="header-logo" as={Link} to={"/"}>
+              <img className="nav-logo" src={require('../images/wordlesslogo.png')} alt="" /> CATCH
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto">
+                <Nav className="ms-auto">
                 <Nav.Link className="nav-link" as={Link} to={"/"}>Home</Nav.Link>
                 <Nav.Link className="nav-link" as={Link} to={"/about"}>About</Nav.Link>
                 <Nav.Link className="nav-link" as={Link} to={"/toys"}>Toy Catalog</Nav.Link>
