@@ -11,19 +11,17 @@ import Search from './Search';
 
 import './Navbar.css'
 
-
 export default class NavBar extends Component {
-
+  
   render() {
     return (
       <Router>
-        <Navbar className="header"  expand="lg">
-            <Container>
-            <Navbar.Brand className="header-logo" as={Link} to={"/"}>
+        <Navbar className="header" expand="lg">
+            <Navbar.Brand className="justify-content-left" id="header-logo" as={Link} to={"/"}>
               <img className="nav-logo" src={require('../images/wordlesslogo.png')} alt="" /> CATCH
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Collapse className="collapse-nav" id="basic-navbar-nav">
                 <Nav className="ms-auto">
                 <Nav.Link className="nav-link" as={Link} to={"/"}>Home</Nav.Link>
                 <Nav.Link className="nav-link" as={Link} to={"/about"}>About</Nav.Link>
@@ -34,7 +32,6 @@ export default class NavBar extends Component {
                 </Nav>
                 <Search />
             </Navbar.Collapse>
-            </Container>
         </Navbar>
         <div>
           <Routes>
