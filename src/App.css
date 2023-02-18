@@ -43,4 +43,18 @@
   --color-red: #ff0000;
   --color-blue: #0000ff;
   --color-green: #00ff00;
+  --color-orange: #ffa500;
+  --color-purple: #800080;
+  --color-yellow: #ffff00;
+  --color-pink: #ffc0cb;
+  --color-brown: #a52a2a;
+  --color-teal: #008080;
+  --color-navy: #000080;
+  --color-gold: #ffd700;
+  --color-silver: #c0c0c0;
+  --color-olive: #808000;
+  --color-lime: #00ff00;
+  --color-fuchsia: #ff00ff;
+  --font-family: Arial, sans-serif;
 }
+
