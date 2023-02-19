@@ -5,7 +5,7 @@ export default function News() {
   return (
     <div>
       <h1><b>News</b></h1>
-    const ArticleCard = ({ image, title, caption, link }) => {
+  const ArticleCard = ({ image, title, caption, link }) => {
   return (
     <Col md={6} className="mb-4">
       <Card>
@@ -99,3 +99,5 @@ const ArticleGrid = () => {
 export default ArticleGrid;
  
     </div>
+)
+}
