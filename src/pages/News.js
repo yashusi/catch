@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card, Row, Col } from "react-bootstrap";
+import './News.css';
 
 const ArticleCard = ({ image, title, caption, link }) => {
   return (
