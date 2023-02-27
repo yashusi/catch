@@ -35,7 +35,7 @@ export default function About(){
             Jacob (Chief Technical Officer)
           </div>
           <div>
-            <img src = {require('../images/About/Katie_sHeadshot.jpg')} alt = 'Jacob (Chief Technical Officer)' id = 'images' />
+            <img src = {require('../images/About/Katie_s Headshot.jpg')} alt = 'Jacob (Chief Technical Officer)' id = 'images' />
             Katie (PR Chair)
           </div>
         </div>
