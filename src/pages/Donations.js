@@ -15,7 +15,7 @@ export default function Donations() {
     <h3><b>Carolina Institute for Developmental Disabilities</b></h3>
     <div class="description">The Carolina Institute for Developmental Disabilities is a comprehensive program for services, research, and training relevant to individuals with developmental disabilities and their families. The Carolina Institute provides a continuum of clinical services from complex, interdisciplinary evaluations on-site to more limited and selected clinical services and training in all 100 counties in North Carolina. The Institute brings together state-of-the-art research and clinical practice to ensure the best possible care for citizens of North Carolina.</div>
     <div><strong>Total Toys Donated: </strong>20</div>
-    <div><strong>Total Donations: </strong>2</div>
+    <div><strong>Total Donation: </strong>2</div>
     </div>
     </div>
     <div class="sitesection">
