@@ -9,6 +9,12 @@
 
 }
 
+#text{
+  margin-top: 25px;
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
 #images {
     height: 350px;
     width: 100%;
