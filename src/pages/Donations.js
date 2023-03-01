@@ -3,6 +3,7 @@ import './Donations.css';
 <link href="https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:300,400,500,700|Source+Code+Pro:400,700&display=swap"></link>
 
 export default function Donations() {
+
   const gofundmeform = "https://gofund.me/9dca4d2f";
   return (
     <>
@@ -69,6 +70,7 @@ export default function Donations() {
     <p><em>Donation data collection began in Spring 2021.</em></p>
     </div>
     </>
+
   )
 }
 
