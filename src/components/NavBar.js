@@ -7,7 +7,6 @@ import Toys from '../pages/Toys';
 import Donations from '../pages/Donations';
 import News from '../pages/News';
 import Contact from '../pages/Contact';
-import Search from './Search';
 
 import './Navbar.css'
 
@@ -30,7 +29,6 @@ export default class NavBar extends Component {
                 <Nav.Link className="nav-link" as={Link} to={"/news"}>News</Nav.Link>
                 <Nav.Link className="nav-link" as={Link} to={"/contact"}>Contact</Nav.Link>
                 </Nav>
-                <Search />
             </Navbar.Collapse>
         </Navbar>
         <div>
