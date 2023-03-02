@@ -115,8 +115,9 @@ export default function Home() {
       <h1>Total Donated</h1>
       <h1>
         <CountUp
+          duration={2}
           end={donatedSum}
-          duration={1}
+          useEasing={true}
         />
       </h1>
       <hr></hr>
