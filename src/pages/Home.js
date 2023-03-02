@@ -1,5 +1,11 @@
 import React from 'react';
+import { useEffect } from 'react';
+import { useState } from 'react';
 import Slider from "../components/Slider.js";
+import { db } from '../firebase-config.js';
+import { collection, getDocs } from 'firebase/firestore';
+import CountUp from 'react-countup';
+
 import "./Home.css";
 
 const interestMeetingImages = [
@@ -80,8 +86,39 @@ const lateNightImages = [
 
 
 export default function Home() {
+  const toysRef = collection(db, "toys"); //reference to toys collection in firestore database
+  const [toys, setToys] = useState([]);
+  const [donatedSum, setDonatedSum] = useState(0);
+  
+
+  useEffect(() => {
+    const getToys = async () => {
+      const data = await getDocs(toysRef);
+      setToys(data.docs.map((doc) => ({...doc.data(), id: doc.id})));
+    }
+    getToys()
+  }, [])
+
+  useEffect(() => {
+    const getSum = async () => {
+      let sum = 0;
+      toys.forEach(element => {
+        sum += element.donated;
+      });
+      setDonatedSum(sum);
+    }
+    getSum()
+  }, [toys])
+
   return (
     <>
+      <h1>Total Donated</h1>
+      <h1>
+        <CountUp
+          end={donatedSum}
+          duration={1}
+        />
+      </h1>
       <hr></hr>
       <h2>Recent Events</h2>
       <div className="carousel">

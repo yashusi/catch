@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import {Container, Nav, Navbar, NavDropdown, Button, Form} from 'react-bootstrap';
+import React from 'react';
+import {Nav, Navbar} from 'react-bootstrap';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import Home from '../pages/Home';
 import About from '../pages/About';
@@ -10,9 +10,9 @@ import Contact from '../pages/Contact';
 
 import './Navbar.css'
 
-export default class NavBar extends Component {
+export default function NavBar() {
   
-  render() {
+
     return (
       <Router>
         <Navbar className="header" expand="lg">
@@ -42,7 +42,6 @@ export default class NavBar extends Component {
           </Routes>
         </div>
       </Router>
-    )
-  }
+    );
 }
 
